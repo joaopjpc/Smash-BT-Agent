@@ -1,0 +1,12 @@
+version: 1
+name: triage
+purpose: >-
+  Identificar o objetivo do usuário e encaminhar para knowledge,
+  interview (aula experimental) ou escalation (serviços exclusivos).
+
+routing_rules:
+  - when: "aula experimental|teste|trial"
+    route: interview
+  - when: "pagamento|aluguel|quadra|churrasqueira|fisio|nutri"
+    route: escalation
+  - default: knowledge
