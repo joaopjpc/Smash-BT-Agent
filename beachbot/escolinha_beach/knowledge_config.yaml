@@ -1,0 +1,8 @@
+version: 1
+name: knowledge
+purpose: Responder dúvidas gerais usando os conteúdos locais.
+
+sources:
+  - ../content/faq.md
+  - ../content/horarios.md
+  - ../content/servicos.md

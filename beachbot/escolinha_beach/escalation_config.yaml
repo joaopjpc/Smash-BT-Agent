@@ -1,0 +1,11 @@
+version: 1
+name: escalation
+purpose: Encaminhar serviços com pagamento ou exclusividade para humano.
+
+handoff_message: >-
+  Esse serviço precisa de atendimento humano para pagamento ou reserva
+  exclusiva. Vou registrar o pedido e alguém da equipe irá falar com você.
+
+handoff_fields:
+  - topic
+  - details

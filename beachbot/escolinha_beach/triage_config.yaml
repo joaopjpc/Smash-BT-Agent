@@ -1,0 +1,53 @@
+version: 1
+name: triage
+purpose: >-
+  Identificar o objetivo do usuario e encaminhar para interview (aula experimental),
+  escalation (servicos exclusivos) ou answer (respostas gerais).
+
+keywords:
+  "Interview Agent":
+    - "aula experimental"
+    - "aula de teste"
+    - "experimental"
+    - "aula gratis"
+    - "aula teste"
+    - "teste"
+
+  "Escalation Agent":
+    - "pagamento"
+    - "pagar"
+    - "fatura"
+    - "mensalidade"
+    - "matricula"
+    - "inscricao"
+    - "inscrição"
+    - "cancelar"
+    - "cancelamento"
+    - "aluguel"
+    - "alugar"
+    - "reservar"
+    - "reserva"
+    - "reservas"
+    - "falar com humano"
+    - "atendente"
+   
+  "Answer Agent":
+    - "horario"
+    - "horarios"
+    - "funcionamento"
+    - "plano"
+    - "planos"
+    - "mensal"
+    - "trimestral"
+    - "semestral"
+    - "servico"
+    - "servicos"
+    - "endereco"
+    - "endereço"
+    - "local"
+    - "onde fica"
+    - "localizacao"
+    - "preco"
+    - "valor"
+    - "valores"
+    - "ct"

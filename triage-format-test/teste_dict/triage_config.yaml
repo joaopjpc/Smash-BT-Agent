@@ -1,0 +1,10 @@
+agent_name: "Triage Agent"
+
+keywords:
+  "Escalation Agent":
+    - "humano"
+    - "falar com atendente"
+
+  "Knowledge Agent":
+    - "como funciona"
+    - "manual"
