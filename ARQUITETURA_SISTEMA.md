@@ -18,10 +18,10 @@
         ┌─────────────┼─────────────┐
         ▼             ▼             ▼
 ┌─────────────┐ ┌─────────────┐ ┌─────────────┐
-│ FLOW AGENT  │ │ KNOWLEDGE   │ │ ESCALATION  │
-│ │ │ AGENT   │ │      AGENT  │ │             │
-│ • Opções    │ │   • Arquivos│ │   • Humano  │
-│ • Direção   │ │     .md     │ │             │
+│ FLOW AGENT  │ │  KNOWLEDGE  │ │  ESCALATION │
+│             │ │     AGENT   │ │     AGENT   │
+│ • Opções    │ │• Arquivos.md│ │   • Humano  │
+│ • Direção   │ │             │ │             │
 └─────┬───────┘ └─────┬───────┘ └─────────────┘
       │               │
       ▼               ▼
@@ -30,7 +30,7 @@
 │ AGENT       │ │ AGENT       │
 │             │ │             │
 │ • Coleta    │ │ • Síntese   │
-│ dados       │ │ final       │
+│ dados agend.│ │   final     │
 │ • Cria      │ │ • Resposta  │
 │ estado      │ │             │
 └─────┬───────┘ └─────────────┘
