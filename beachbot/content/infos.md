@@ -1,31 +1,17 @@
-# Informações do CT
-
-## Serviços e estrutura
-- Aulas de Beach Tennis
-- Treino Funcional
-- Nutricionista
-- Fisioterapeuta
-- Massoterapeuta
-- Bar
-- Loja
+## Estrutura do Smash Beach Tennis
+O CT Smash Beach Tennis conta com:
+- 4 quadras de Beach Tennis
 - Área Kids
+- Bar e loja
+- Profissionais de nutrição, funcional, fisioterapia e massoterapia
 
-## Planos
-- Mensal (2x semana)
-- Mensal (3x semana)
-- Plano kids
-
-## Quadras e churrasqueira
-- O CT tem 4 quadras.
-- As quadras podem ser alugadas.
-- A churrasqueira também pode ser alugada.
-
-## Endereço
-Rua Le Corbusier, 29 - Recreio, RJ. referência: Barra Bonita, bem em frente a praça
+## Endereço do CT
+O Smash Beach Tennis fica localizado na Rua Le Corbusier, 29 – Recreio, RJ.  
+Referência: Barra Bonita, em frente à praça.
 
 ## Aula experimental
-O CT aceita uma aula experimental grátis.
+O Smash Beach Tennis oferece uma aula experimental gratuita para novos alunos.
 
 ## Regras de acesso
-- Exclusivo para alunos matriculados: Aulas de Beach Tennis, Treino Funcional, Nutricionista, Fisioterapeuta, Massoterapeuta e Área Kids.
-- Para não alunos: aluguel de quadra e churrasqueira, aulas avulsas de Beach Tennis.
+- Serviços exclusivos para alunos matriculados: aulas de Beach Tennis, treino funcional, nutricionista, fisioterapeuta, massoterapeuta e área kids.
+- Serviços disponíveis para não alunos: aluguel de quadra, aluguel de churrasqueira, aulas avulsas e uma aula experimental grátis. As 4 quadras, a churrasqueira e o bar podem ser alugados por uma só pessoa de uma vez. Seja pra eventos ou não

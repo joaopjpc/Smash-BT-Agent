@@ -14,7 +14,7 @@ def build_network() -> Any:
     return create_standard_network(
         templates_root=Path(__file__).parent,
         client="escolinha_beach",
-        include_escalation=True,
+        escalation_channels="Apenas mantenha-se atento no WhatsApp. Já contactamos um  atendente humano que irá atendê-lo em breve.",
         include_feedback=False,
         include_confirmation=False,
         include_answer=False,

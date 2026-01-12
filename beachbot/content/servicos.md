@@ -1,12 +1,13 @@
-//serve pro agente flow usar pra falar o que da pra fazer por wpp
-# Serviços
+## Serviços atendidos automaticamente pelo WhatsApp
 
-## Serviços disponíveis
-- Aulas em grupo ou sozinho (avulsas) particulares
-- Aula experimental
+O atendimento automático do Smash Beach Tennis pode auxiliar com:
+- Informações sobre: planos, horários, funcionamento, estrutura, e infos gerais do CT
+- Agendamento de aula experimental
 
 
 ## Serviços com atendimento humano
+
+Os seguintes serviços exigem atendimento humano:
 - Aluguel de quadra
-- Aluguel de Churrasqueira e eventos
-- Agendamento de Fisioterapia, Nutricionista, Treino Funcional e Massoterapia
+- Aluguel de churrasqueira e eventos
+- Agendamento com fisioterapeuta, nutricionista, treino funcional e massoterapia

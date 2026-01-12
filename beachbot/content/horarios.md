@@ -1,11 +1,16 @@
-# Horários
+## Horários de funcionamento e aulas
 
-**Segunda a sexta:**
-- Manhã: 7h às 10h
-- Tarde: 12h às 17h
-- Noite: 18 às 20h 
+O Smash Beach Tennis funciona de segunda a sexta-feira.
 
-Cada aula dura 1 hora, então os horários são:
-- Manhã: 7h às 8h, 8h às 9h, 9h às 10h
-- Tarde 12h às 13h, 13h às 14h, 14h às 15h, 15h às 16h, 16h às 17h, 17h às 18h
-- Noite: 18h às 19h, 19h às 20h
+### Horários disponíveis
+- Manhã: das 7h às 10h
+- Tarde: das 12h às 17h
+- Noite: das 18h às 20h
+
+### Duração das aulas
+Cada aula de Beach Tennis tem duração de 1 hora.
+
+### Horários das aulas
+- Manhã: 7h–8h, 8h–9h, 9h–10h
+- Tarde: 12h–13h, 13h–14h, 14h–15h, 15h–16h, 16h–17h, 17h–18h
+- Noite: 18h–19h, 19h–20h
