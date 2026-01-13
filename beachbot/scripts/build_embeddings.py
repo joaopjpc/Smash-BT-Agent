@@ -1,4 +1,4 @@
-"""Gera embeddings combinados dos arquivos .md em content/ usando OpenAI. (base de informação do CT)"""
+"""Gera embeddings combinados dos arquivos .md em knowledge/ usando OpenAI. (base de informação do CT)"""
 from __future__ import annotations
 
 import argparse
@@ -12,7 +12,7 @@ from openai import OpenAI
 
 
 ROOT = Path(__file__).resolve().parent.parent # Raiz do beachbot
-CONTENT_DIR = ROOT / "content"                # Diretório de conteúdo
+CONTENT_DIR = ROOT / "knowledge"                # Diretório de conteúdo
 DEFAULT_OUT = CONTENT_DIR / "embeddings" / "ct_combined.pkl" # Saída padrão
 DEFAULT_FILES: Sequence[str] = [
     "faq_aula_experimental.md",
@@ -83,7 +83,7 @@ def build_embeddings(
 
 def main() -> None:
     parser = argparse.ArgumentParser(
-        description="Gera embeddings combinados dos markdowns em content/."
+        description="Gera embeddings combinados dos markdowns em knowledge/."
     )
     parser.add_argument( # Argumento para modelo de embedding
         "--model",
@@ -105,13 +105,13 @@ def main() -> None:
     parser.add_argument( # Argumento para caminho de pré-visualização
         "--preview-out",
         type=Path,
-        help="Salva o texto combinado antes do embedding (ex: content/embeddings/preview.md)",
+        help="Salva o texto combinado antes do embedding (ex: knowledge/embeddings/preview.md)",
     )
     parser.add_argument( # Argumento para lista de arquivos
         "--files",
         nargs="*",
         default=DEFAULT_FILES,
-        help=f"Lista de arquivos em content/ (default: {', '.join(DEFAULT_FILES)})",
+        help=f"Lista de arquivos em knowledge/ (default: {', '.join(DEFAULT_FILES)})",
     )
     args = parser.parse_args()
 

@@ -13,7 +13,7 @@ def build_network() -> Any:
     """Cria a rede do AtendentePro usando templates locais."""
     return create_standard_network(
         templates_root=Path(__file__).parent,
-        client="escolinha_beach",
+        client="config",
         escalation_channels="Apenas mantenha-se atento no WhatsApp. Já contactamos um  atendente humano que irá atendê-lo em breve.",
         include_feedback=False,
         include_confirmation=False,

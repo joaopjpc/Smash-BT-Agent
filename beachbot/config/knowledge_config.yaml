@@ -5,7 +5,7 @@ purpose: Responder duvidas gerais da Smash Beach Tennis.
 about: |
   Responda perguntas sobre horarios, servicos, planos, aulas, estrutura e infos gerais usando o embedding combinado.
 
-embeddings_path: "beachbot/content/embeddings/ct_combined.pkl"
+embeddings_path: "beachbot/knowledge/embeddings/ct_combined.pkl"
 
 template: |
   Use go_to_rag. Fontes no embedding:
@@ -26,32 +26,32 @@ format: |
 
 documents:
   - name: FAQ Aula experimental
-    path: ../content/faq_aula_experimental.md
+    path: ../knowledge/faq_aula_experimental.md
     description: Aula experimental (gratuidade, duracao, equipamentos, formato).
   - name: FAQ Publico e niveis
-    path: ../content/faq_publico_niveis.md
+    path: ../knowledge/faq_publico_niveis.md
     description: Quem pode participar e niveis atendidos.
   - name: FAQ Planos e matricula
-    path: ../content/faq_planos_matricula.md
+    path: ../knowledge/faq_planos_matricula.md
     description: Aulas avulsas e matricula.
   - name: FAQ Estrutura e servicos
-    path: ../content/faq_estrutura_servicos.md
+    path: ../knowledge/faq_estrutura_servicos.md
     description: Servicos e estrutura do CT.
   - name: FAQ Regras de acesso
-    path: ../content/faq_regras_acesso.md
+    path: ../knowledge/faq_regras_acesso.md
     description: O que e exclusivo para alunos e o que nao alunos podem usar.
   - name: FAQ Atendimento
-    path: ../content/faq_atendimento.md
+    path: ../knowledge/faq_atendimento.md
     description: O que resolve via WhatsApp e quando aciona humano.
   - name: Horarios
-    path: ../content/horarios.md
+    path: ../knowledge/horarios.md
     description: Horarios de funcionamento e orientacao sobre encaminhamento humano.
   - name: Servicos
-    path: ../content/servicos.md
+    path: ../knowledge/servicos.md
     description: Planos, tipos de aula e servicos exclusivos que exigem atendimento humano.
   - name: Infos
-    path: ../content/infos.md
+    path: ../knowledge/infos.md
     description: Endereco, estrutura e informacoes gerais sobre o CT.
   - name: Planos
-    path: ../content/planos.md
+    path: ../knowledge/planos.md
     description: Valores de planos de manha e noite, por frequencia e periodo.

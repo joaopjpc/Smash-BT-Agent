@@ -1,8 +1,8 @@
 Embedding strategy (MVP)
 
-- Conteúdo: todos os .md em content/ (faq, horarios, servicos, infos, planos) combinados em um único conjunto e quebrados em poucos chunks.
+- Conteúdo: todos os .md em knowledge/ (faq, horarios, servicos, infos, planos) combinados em um único conjunto e quebrados em poucos chunks.
 - Geração: script em scripts/build_embeddings.py (usa textwrap.wrap, tamanho de chunk configurável via --wrap-width).
 - Modelo de embedding: OpenAI text-embedding-3-large.
-- Artefato: content/embeddings/ct_combined.pkl (pickle com vetores + metadados source/index/content). Pré-visualização em content/embeddings/ct_combined_preview.md.
+- Artefato: knowledge/embeddings/ct_combined.pkl (pickle com vetores + metadados source/index/content). Pré-visualização em knowledge/embeddings/ct_combined_preview.md.
 - Execução: python scripts/build_embeddings.py [--preview-out caminho] [--wrap-width N] [--files ...] [--model ...].
 - Por que sem overlap/índice vetorial: volume pequeno (5 chunks), custo baixo e latência simples em memória; o framework faz similaridade direta (cosine) sem precisar de FAISS/Weaviate. Overlap não foi necessário porque os docs são curtos e legíveis sem perda de contexto
