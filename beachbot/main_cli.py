@@ -1,8 +1,6 @@
 """CLI entrypoint for Smash Beach Tennis bot."""
 from __future__ import annotations
 
-from pathlib import Path
-
 from dotenv import load_dotenv
 
 from beachbot import db
@@ -10,7 +8,7 @@ from beachbot.network import build_network, run_turn
 
 load_dotenv()
 
-DATA_PATH = Path(__file__).parent / "data" / "data.sqlite"
+DATA_PATH = db.DEFAULT_DB_PATH
 
 
 def main() -> None:

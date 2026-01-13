@@ -3,42 +3,48 @@ from __future__ import annotations
 
 import sqlite3
 from pathlib import Path
-from typing import Iterable
 
 
-SCHEMA = (
-    "CREATE TABLE IF NOT EXISTS conversas ("
-    "  id INTEGER PRIMARY KEY AUTOINCREMENT,"
-    "  role TEXT NOT NULL,"
-    "  content TEXT NOT NULL,"
-    "  user_phone TEXT,"
-    "  session TEXT,"
-    "  criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
-    ");",
-    "CREATE TABLE IF NOT EXISTS clientes ("
-    "  id INTEGER PRIMARY KEY AUTOINCREMENT,"
-    "  telefone TEXT NOT NULL UNIQUE,"
-    "  nome TEXT NOT NULL,"
-    "  criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
-    ");",
-    "CREATE TABLE IF NOT EXISTS aulas_experimentais ("
-    "  id INTEGER PRIMARY KEY AUTOINCREMENT,"
-    "  nome TEXT NOT NULL,"
-    "  telefone TEXT NOT NULL,"
-    "  horario_escolhido TEXT NOT NULL,"
-    "  nivel_aluno TEXT NOT NULL,"
-    "  status TEXT NOT NULL DEFAULT 'confirmacao_pendente',"
-    "  criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
-    ");",
-)
+_BASE_DIR = Path(__file__).resolve().parent
+PROJECT_ROOT = _BASE_DIR.parent
+DEFAULT_DB_PATH = _BASE_DIR / "data" / "data.sqlite"
+DEFAULT_MIGRATIONS_DIR = PROJECT_ROOT / "db" / "migrations"
+
+
+def apply_migrations(
+    connection: sqlite3.Connection, migrations_dir: Path | None = None
+) -> None:
+    """Aplica migrations SQL em ordem alfabetica, de forma idempotente."""
+    directory = Path(migrations_dir) if migrations_dir else DEFAULT_MIGRATIONS_DIR
+    directory.mkdir(parents=True, exist_ok=True)
+
+    connection.execute(
+        "CREATE TABLE IF NOT EXISTS migrations ("
+        "  id TEXT PRIMARY KEY,"
+        "  applied_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+        ");"
+    )
+    connection.commit()
+
+    applied = {row[0] for row in connection.execute("SELECT id FROM migrations")}
+    for migration_path in sorted(directory.glob("*.sql"), key=lambda path: path.name):
+        migration_id = migration_path.name
+        if migration_id in applied:
+            continue
+        sql = migration_path.read_text(encoding="utf-8")
+        connection.executescript(sql)
+        connection.execute(
+            "INSERT INTO migrations (id) VALUES (?)",
+            (migration_id,),
+        )
+        connection.commit()
+        print(f"Applying {migration_id}... OK")
 
 
 def init_db(path: Path) -> sqlite3.Connection:
-    """Cria o arquivo do banco SQLite e as tabelas necessarias."""
+    """Cria o arquivo do banco SQLite e garante migrations aplicadas."""
     connection = sqlite3.connect(path)
-    for statement in SCHEMA:
-        connection.execute(statement)
-    connection.commit()
+    apply_migrations(connection)
     return connection
 
 

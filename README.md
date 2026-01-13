@@ -40,5 +40,8 @@ Triage (router) direciona a conversa para:
 - Embeddings: `knowledge_config.yaml` aponta para `beachbot/content/embeddings/ct_combined.pkl`.
 - Para ativar Answer/Feedback, ajuste `include_answer`/`include_feedback` em `beachbot/network.py`.
 
-## 🚫 Git
-- `beachbot/data/data.sqlite` ignorado (artefato de runtime).
+
+## Banco de Dados (Dev)
+- Defina o caminho do SQLite fora do repo ajustando `beachbot/db.py` (`DEFAULT_DB_PATH`) ou `beachbot/main_cli.py` (`DATA_PATH`).
+- Para iniciar/aplicar migrations: `python -m db.migrate` (cria o arquivo se nao existir).
+- Para recriar do zero: apague o arquivo `data.sqlite` no caminho externo e rode `python -m db.migrate`.
