@@ -1,5 +1,5 @@
 # 🤖 Smash Beach Tennis – AtendentePro (Multi-Agentes)
-
+### ⚠️ Projeto em desenvolvimento (MVP)
 Assistente de atendimento para o CT Smash Beach Tennis, baseado no framework **AtendentePro**.
 
 Este projeto implementa um atendente virtual inteligente para um Centro de Treinamento (CT), com o objetivo de substituir o atendimento humano de primeiro nível, automatizando dúvidas frequentes e o agendamento de serviços, utilizando um framework de agentes.
