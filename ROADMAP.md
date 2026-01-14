@@ -13,7 +13,9 @@ Objetivo: quando o cliente confirmar, registrar aula experimental no banco.
 
 - [x] Definir modelo de dados (aulas_experimentais no banco)
 - [x] Implementar migrations SQL
+- [ ] Investigar e corrigir ambiguidades no Triage Agent (dúvidas de agendamento x agendamento real triagem ambígua só com keywords)
 - [ ] Criar Agent Tool: registrar_aula_experimental()
 - [ ] Integrar tool de registrar aula experimental no fluxo interview.yaml
 - [ ] Usar Confirmation Agent pra confirmar agendamento experimental
 - [ ] Testes de agendamento de aula experimental E2E no CLI
+- [ ] Disponibilizar .md com testes explícitos 
