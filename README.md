@@ -55,7 +55,7 @@ venv\Scripts\activate
    ```
    python beachbot/scripts/build_embeddings.py --preview-out beachbot/knowledge/embeddings/ct_combined_preview.md
    ```
-### 4. Criar o banco aplicando migrations:
+### 4. Criar o banco aplicando migrations: (a partir da raiz do repo)
    ```
    python -m db.migrate
    ```
