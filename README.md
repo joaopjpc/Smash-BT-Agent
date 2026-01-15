@@ -34,7 +34,12 @@ Triage (router) direciona a conversa para:
 
 
 ## 🏃 Como Rodar
-### 0. Pré-requisito: Python 3.10.
+### Pré-requisito: Python 3.10, Crie e ative um ambiente virtual.
+  ```
+python -m venv venv
+venv\Scripts\activate
+  ```
+
 ### 1. Instalar dependencias:
    ```
    pip install -r requirements.txt
