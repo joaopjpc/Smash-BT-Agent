@@ -1,0 +1,13 @@
+Meu escopo é ir pra interview agendar somente aula experimental
+E pra agendamentos dos outros serviços (que exigem pagamento) chamar o escalation pra trazer humano
+Pra INFORMAÇÕES sobre agendamentos, devo chamar o knowledge
+
+O que acontece com a solução do framework (palavras chave pra cada agente) é que o triage se 
+perde quando o texto de entrada envolve "aula experimental", ou outro serviço de agendamento, mas
+a intenção é só tirar dúvidas. Ele leva pro interview em casos de:
+"A aula experimental é gratuita?" -> vai pro interview coletar dados pra aula experimental
+                             |
+                              -> deveria ir pra knowledge responder dúvida
+
+Fica difícil controlar a triagem só com palavras chave. A solução pensada vai ser sobrescrever o prompt
+triage agent pra algo mais personalizado 

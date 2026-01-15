@@ -11,10 +11,22 @@ load_dotenv()
 DATA_PATH = db.DEFAULT_DB_PATH
 
 
+def _select_triage_mode() -> str:
+    print("Modo de triage: [1] padrao (yaml) [2] prompt custom")
+    choice = input("Escolha 1 ou 2 (Enter = 2): ").strip()
+    if choice == "1":
+        return "yaml"
+    if choice in {"", "2"}:
+        return "prompt"
+    print("Opcao invalida, usando prompt custom.")
+    return "prompt"
+
+
 def main() -> None:
     """Simple terminal chat loop with conversation history."""
     connection = db.init_db(DATA_PATH)
-    network = build_network()
+    triage_mode = _select_triage_mode()
+    network = build_network(triage_mode=triage_mode)
     messages: list[dict[str, str]] = []
 
     print("Smash Beach Tennis - Atendimento (digite 'sair' para encerrar)\n")
