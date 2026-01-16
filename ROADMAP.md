@@ -7,7 +7,7 @@
 - [x] Respostas sobre todas as infos do CT
 - [x] Escalar serviços com pagamento pra ser humano
 - [x] Testes de dúvidas gerais e escalation pra servicos de pagamento E2E no CLI
-- [ ] Investigar e corrigir ambiguidades no Triage Agent (dúvidas de agendamento x agendamento real triagem ambígua só com keywords)
+- [x] Investigar e corrigir ambiguidades no Triage Agent (dúvidas de agendamento x agendamento real triagem ambígua só com keywords)
 
 ## Marco 1 — Aula experimental (IN PROGRESS)
 Objetivo: quando o cliente confirmar, registrar aula experimental no banco.
@@ -21,5 +21,5 @@ Objetivo: quando o cliente confirmar, registrar aula experimental no banco.
 - [ ] Disponibilizar .md com testes explícitos
 
 ## Marco 2 — Smash-BT Agent no WhatsApp (NOT STARTED)
-Objetivo : manter o chatbot ativo 24/7 hospedado
+Objetivo : manter o chatbot ativo 24/7 no WhatsApp hospedado
 
