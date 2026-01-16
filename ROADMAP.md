@@ -1,6 +1,6 @@
 # Roadmap
 
-## Marco 0 — Base (ALMOST DONE)
+## Marco 0 — Base (DONE)
 - [x] Estrutura dos agentes e rede
 - [x] Knowledge base (MD) + embeddings pra RAG
 - [x] Persistencia: log de mensagens no banco SQLite
