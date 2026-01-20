@@ -66,7 +66,25 @@ async def _process_message(parsed: ParsedMessage) -> None:
         instance_id=parsed.instance_id,
     )
 
-    if not reply_text:
+    if reply_text is None:
+        logger.info(
+            "Nenhuma resposta enviada (buffer aguardando)",
+            extra={
+                "sender_masked": mask_phone(parsed.sender),
+                "message_id": parsed.message_id,
+                "instance_id": parsed.instance_id,
+            },
+        )
+        return
+    if reply_text == "":
+        logger.warning(
+            "Resposta vazia nao enviada",
+            extra={
+                "sender_masked": mask_phone(parsed.sender),
+                "message_id": parsed.message_id,
+                "instance_id": parsed.instance_id,
+            },
+        )
         return
 
     if evolution_client is None:
@@ -138,7 +156,7 @@ async def _handle_webhook(request: Request) -> JSONResponse:
     except Exception:
         body_preview = str(raw_body[:500])
 
-    logger.info("Payload bruto recebido: %s", body_preview)
+    logger.debug("Payload bruto recebido: %s", body_preview)
 
     try:
         payload: Any = await request.json()
