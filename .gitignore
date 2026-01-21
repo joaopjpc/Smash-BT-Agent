@@ -1,5 +1,4 @@
 .env
-docs/
 .envDEPLOY
 venv
 venv310/
