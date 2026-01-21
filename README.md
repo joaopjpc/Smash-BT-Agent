@@ -1,6 +1,6 @@
 # 🤖 Smash Beach Tennis – AtendentePro 
 ### ⚠️ Projeto em desenvolvimento (MVP)
-![Exemplo de conversa no WhatsApp](docs/image.png)
+![Exemplo de conversa no WhatsApp](docs/intro_imagem.png)
 ![Exemplo de agendamento de aula experimental](docs/agendamento_imagem.png)
 
 Assistente de atendimento para o CT Smash Beach Tennis, baseado no framework **AtendentePro**.
