@@ -37,6 +37,11 @@ Triage (router) direciona a conversa para:
 - `beachbot/scripts/build_embeddings.py`: geração de embeddings (text-embedding-3-large).
 - `docker-compose.yml` e `dockerfile`: suporte a deploy com Evolution API + Postgres.
 
+## 📱 Canal WhatsApp em produção
+- Número do WhatsApp Business em nuvem: **+55 21 3955-3825**.
+- Usado para testes/operação do bot via Evolution API.
+- Configure o webhook da Evolution para o endpoint público do bot para receber mensagens nesse número.
+
 ## Documentação
 - [Deploy em VPS (produção)](docs/DEPLOY_VPS.md)
 - [Rodando o CLI local](docs/CLI_LOCAL.md)
