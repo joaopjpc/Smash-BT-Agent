@@ -38,6 +38,6 @@ Triage (router) direciona a conversa para:
 - `docker-compose.yml` e `dockerfile`: suporte a deploy com Evolution API + Postgres.
 
 ## Documentação
-- [Deploy em VPS (produção)](docs/DEPLOY_VPS.md)
-- [Rodando o CLI local](docs/CLI_LOCAL.md)
-- [Roadmap](docs/ROADMAP.md)
+- [Deploy em VPS (produção)](DEPLOY_VPS.md)
+- [Rodando o CLI local](CLI_LOCAL.md)
+- [Roadmap](ROADMAP.md)
