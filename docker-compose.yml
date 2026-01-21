@@ -3,10 +3,8 @@ services:
     image: postgres:15
     environment:
       POSTGRES_USER: evolution
-      POSTGRES_PASSWORD: evolution
+      POSTGRES_PASSWORD: Senhaforte1921!
       POSTGRES_DB: evolution_db
-    ports:
-      - "5432:5432"
     volumes:
       - evolution_pg:/var/lib/postgresql/data
     restart: always
