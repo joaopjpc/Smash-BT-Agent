@@ -189,6 +189,16 @@ async def _handle_webhook(request: Request) -> JSONResponse:
         preview = parsed_message.text[:60]
         if text_len > 60:
             preview += "..."
+        if not parsed_message.sender:
+            logger.warning(
+                "Sender invalido ou LID; ignorando processamento",
+                extra={
+                    "path": str(request.url.path),
+                    "message_id": parsed_message.message_id,
+                    "reason": "sender_invalid_or_lid",
+                },
+            )
+            return JSONResponse({"ok": True})
 
         logger.info(
             "Mensagem recebida do WhatsApp",
